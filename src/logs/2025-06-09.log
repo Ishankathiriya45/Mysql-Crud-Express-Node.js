@@ -1,0 +1,1724 @@
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=690993e7-9c9d-48fd-b960-359fbb402c51;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:10:51 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 13,
+		"totalPages": 2,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": true,
+		"previous": null,
+		"next": 2,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+			
+...
+Response: 200 32.234 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=9d1f0295-e886-45ad-bb73-aad48ff54b8b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:11:07 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 20.834 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=4c28e059-79c4-4828-aa64-dd85a5dc1b64;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:11:30 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 7.847 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=96c2de62-ddca-4900-9289-9c446bdcc8b7;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:12:15 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ILIKE '%grey%')' at line 1"
+}
+Response: 500 11.381 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=278be7f2-865d-41e4-a345-62e1a7bc45c0;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:12:57 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 13.406 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=96c5e98f-22fc-447d-a13e-70e7b97787d9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:13:32 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ILIKE '%grey%')' at line 1"
+}
+Response: 500 8.002 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=a11c622b-e212-49b8-9907-7539524954d9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:13:46 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 12.000 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=f55c459e-331d-4632-b95c-23a2606b3d7d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:14:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 11.135 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=59798490-57a5-4988-b863-0a546e3d0209;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:14:23 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 26.733 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=0fcb642e-cb6f-4c78-8c2a-903df98a1680;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:15:16 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 7.614 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=aa2ee15f-ecd9-4cde-85bb-51f57dae35d1;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:16:29 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.433 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=053cd2ce-6358-4211-823b-3a15c8f6b206;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:16:39 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(iLike)]: '%grey%' } }"
+}
+Response: 500 10.745 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=ec7828a4-a95b-45a5-8be8-f11777d1aadf;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:16:53 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 6.479 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=1c9f5a66-fdf0-40cf-af6d-3d2e053eb53a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:18:06 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.820 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=66b4d973-6f9a-45ae-a3a1-4f3eeafc405a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:18:30 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 6.045 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=7feb28e5-bd07-4d84-8e36-c62a7d18777e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:18:57 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.055 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=f87a486e-5016-4ec9-949a-8fc5f2165307;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:22:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.683 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=2553983c-225d-47dd-86c0-dede72de737c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:22:35 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 1.938 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=d240931a-f6ac-4524-8c7f-31265bbd255f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:22:44 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 19.688 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=5f495c65-a117-4773-b7d6-759f17f9a978;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:23:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 9.729 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=8e08287e-5fef-4a56-8889-ebf80fd75699;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:26:08 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.397 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=71210516-bb16-44d7-81b1-b6220e87e458;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:26:17 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 5.861 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=14145b85-127a-49be-a4e6-d61d526292dc;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:26:31 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 9.604 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=5a45fab9-f112-4a9d-b21e-fbd25afe62a7;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:26:51 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 6.393 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=2b54603b-7d3e-4933-939d-b14b2ff03e3a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:27:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { msg: undefined }"
+}
+Response: 500 10.214 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=98ca02c2-cfc8-4694-a965-adcebd271320;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:30:09 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 14.047 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=17d66e64-7c89-4379-b2a5-b559d10d1df5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:33:32 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 31.405 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=eeaaf0fc-a233-44ae-b49e-dad6576b0116;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:33:44 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 12.515 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=4a6b95bb-a2e9-4c4a-b1fc-0717adc30930;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:33:59 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Invalid value { name: { [Symbol(like)]: '%grey%' } }"
+}
+Response: 500 8.373 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=6c993e40-1d80-4022-8ebc-4eb3d51957c4;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:34:08 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 25.356 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=089992f6-dd86-4fa3-8542-7b461f20ce7a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:35:41 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 19.910 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=ee5ed862-710d-4dee-a974-416f5a52bd30;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:42:49 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 9.234 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=e0f08369-f25c-4a0c-ae64-ae14785aa9ee;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:47:51 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 3.017 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=22eb8366-ac67-4fe5-a853-f793855e5831;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:55:29 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 22.391 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=263c00ef-9c1c-4ed0-ab52-f39bed746170;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:55:46 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 21.972 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=a4501b1a-0bf5-44f4-a54e-b4701b289b50;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 17:58:50 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "s.replace is not a function"
+}
+Response: 500 5.861 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=e4adab0a-4756-4bc1-bd8e-623f1a5f203f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:02:08 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Unknown column 'Product.field' in 'where clause'"
+}
+Response: 500 10.688 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=afbc6087-6b93-4cae-8372-a5c6affc2c9c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:02:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 12.114 ms 
+
+Request: GET /api/v1/admin/product/list?search=phixit headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=0baecae0-3dd7-4563-b337-1184b2cec3d0;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:03:18 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [],
+	"error": null
+}
+Response: 200 11.638 ms 
+
+Request: GET /api/v1/admin/product/list?search=myk headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=699e8ed5-5d51-410c-9cc2-72592ee29920;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:03:22 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 8,
+			"name": "LATICRETE 346",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 38,
+			"price": 2850,
+			"weight": "12kg",
+			"productImg": "1746535752366-comOne.jfif",
+			"status": true,
+			"createdAt": "2025-05-06T04:55:56.000Z",
+			"updatedAt": "2025-05-06T12:49:12.000Z"
+		
+...
+Response: 200 5.583 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=a0232f7a-9c70-4281-ba2f-3145ee4b56f4;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:03:51 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 13.406 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=06e59d9e-0318-4ed2-afeb-e0d5ba7b233d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:04:15 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 20.317 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=9fe2b07b-cd1d-46dd-a7ce-e22290a09251;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:04:27 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 5.680 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=c05a1328-dfdc-4795-aac4-cdba3003330b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:05:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 10.943 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=c6ca3bb8-c482-4d64-910a-203d00f102c6;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:05:39 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 3.238 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=ed13f562-e35c-4da0-b80a-c82d09fb455c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:14:09 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 23.576 ms 
+
+Request: GET /api/v1/admin/product/list?search=gry headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=b9c0871f-a245-42a5-b8ac-c3f1c6c1758e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:14:17 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [],
+	"error": null
+}
+Response: 200 3.815 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=025dea94-05f1-4f70-af58-5d3a171b0be0;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:14:20 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 2.665 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=1ed283dd-d064-4005-a938-8279cf15b011;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:14:56 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 11.802 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=8a4eb806-35aa-4979-b37d-21c464d7e8f2;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:15:01 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 4.157 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=d9db476f-41b1-4489-b619-101dfc0a52db;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:11 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 12.928 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=18b832ef-35c7-44f9-9d28-ec7ca1a228fe;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:17 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 3.559 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=ca651a92-39b4-44b9-b1f3-39c8812019f6;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:24 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 3.109 ms 
+
+Request: GET /api/v1/admin/product/list?search=aabs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=19c0e68e-b95a-41a5-9b38-b98c11044764;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:31 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [],
+	"error": null
+}
+Response: 200 13.224 ms 
+
+Request: GET /api/v1/admin/product/list?search=abs headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=3ca25322-0b74-4a7e-862b-cd1177853eaf;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		},
+		{
+			"id": 2,
+			"name": "LATICRETE Myk Sp-100",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 18,
+			"price": 2950,
+			"weight": "14kg",
+			"productImg": "1746171050605-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:30:52.000Z",
+			"updatedAt": "2025-05-02T07:30:52.000Z"
+		},
+		{
+			"id": 35,
+			"name": "LATICRETE 485",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 31,
+			"price": 6720,
+			"weight": "9kg",
+			"productImg": "1747141089133-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-13T12:58:09.000Z",
+			"updatedAt": "2025-05-13T12:58:09.000Z"
+		}
+	]
+...
+Response: 200 4.126 ms 
+
+Request: GET /api/v1/admin/product/list?search=grey headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=0fce9f35-7869-4792-830a-12c5c1678aa2;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:18:41 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": [
+		{
+			"id": 1,
+			"name": "MYK 305 GREY Tile",
+			"brand": "myk laticrete",
+			"category": 1,
+			"stock": 12,
+			"price": 21600,
+			"weight": "20kg",
+			"productImg": "1746170481283-abs.jpg",
+			"status": true,
+			"createdAt": "2025-05-02T07:21:21.000Z",
+			"updatedAt": "2025-05-02T07:27:20.000Z"
+		}
+	],
+	"error": null
+}
+Response: 200 2.324 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=0ef6e784-0406-4f8f-8224-fb8533f6895d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:25:57 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 13,
+		"totalPages": 2,
+		"currentPage": 1,
+		"hasPrevious": false,
+		"hasNext": true,
+		"previous": null,
+		"next": 2,
+		"rows": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2
+...
+Response: 200 41.410 ms 
+
+Request: GET /api/v1/admin/product/list?currentPage=1&pageSize=2 headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=e0fff4ba-916d-48f1-b9e7-c7ea708e4ff9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:26:14 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 13,
+		"totalPages": 7,
+		"currentPage": 1,
+		"hasPrevious": false,
+		"hasNext": true,
+		"previous": null,
+		"next": 2,
+		"rows": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			}
+		]
+	},
+	"error": null
+}
+Response: 200 5.742 ms 
+
+Request: GET /api/v1/admin/product/list?currentPage=2&pageSize=2 headers[user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=d87d256d-7855-416e-a3ef-38e0d94cfc67;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Mon Jun 09 2025 18:26:23 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 13,
+		"totalPages": 7,
+		"currentPage": 2,
+		"hasPrevious": true,
+		"hasNext": true,
+		"previous": 1,
+		"next": 3,
+		"rows": [
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+				"weight": "12kg",
+				"productImg": "1746535752366-comOne.jfif",
+				"status": true,
+				"createdAt": "2025-05-06T04:55:56.000Z",
+				"updatedAt": "2025-05-06T12:49:12.000Z"
+			},
+			{
+				"id": 10,
+				"name": "LATICRETE 387",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 35,
+				"price": 3460,
+				"weight": "16kg",
+				"productImg": "1746507537571-sandwich2.jpg",
+				"status": true,
+				"createdAt": "2025-05-06T04:58:57.000Z",
+				"updatedAt": "2025-05-06T04:58:57.000Z"
+			}
+		]
+	},
+	"error": null
+}
+Response: 200 3.922 ms 

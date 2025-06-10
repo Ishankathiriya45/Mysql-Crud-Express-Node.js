@@ -1,0 +1,1441 @@
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e81266dd-7f9b-42ab-8660-d2d3b79379db;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=67] at Sat May 10 2025 10:31:21 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com",
+	"password": "rohan123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvaGFuMUBnbWFpbC5jb20iLCJyb2xlX25hbWUiOiJDbGllbnQiLCJpYXQiOjE3NDY4NTMyODEsImV4cCI6MTc0NzExMjQ4MX0.acgWS5zzUqkTVsXCNl90GImyHKCLeSfSUhgxD0EKTpg",
+	"error": null
+}
+Response: 200 154.147 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=5e037480-e59e-4b05-a876-ab544b98cb79;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Sat May 10 2025 10:34:56 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NTM0OTYsImV4cCI6MTc0NzExMjY5Nn0.zrgxA7niz362vKEuL9fU61KIYMQz2CLVBum9TYJOESc",
+	"error": null
+}
+Response: 200 192.075 ms 
+
+Request: POST /api/v1/client/auth/create headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=9fc4e2e9-747d-4a8d-98ff-557211cd0045;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=111] at Sat May 10 2025 10:35:38 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "jeel",
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456",
+	"phone": 9756312
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Phone number must have exactly 10 digits"
+}
+Response: 422 5.724 ms 
+
+Request: POST /api/v1/client/auth/create headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=a8f4e3f5-cf2e-4298-8ab2-77184b8728f5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=113] at Sat May 10 2025 10:35:44 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "jeel",
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456",
+	"phone": 975631245
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Phone number must have exactly 10 digits"
+}
+Response: 422 1.533 ms 
+
+Request: POST /api/v1/client/auth/create headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=5da446cd-9d53-403a-89bc-d92bf512babb;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=114] at Sat May 10 2025 10:35:49 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "jeel",
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456",
+	"phone": 9756312457
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg1MzU0OSwiZXhwIjoxNzQ3MTEyNzQ5fQ.aWxSKyrVCDuYzMUDbpc2Tb_6V1rMUH30nXqy-QQYzdU",
+	"error": null
+}
+Response: 200 214.025 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=7c63bd63-c10d-4b4b-b603-b70cac4d54a9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:12:35 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 40.455 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=69774cd7-a089-45d2-8fa5-8d7f2e66e99c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:12:39 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 8.259 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=2d784f8e-2cd9-4981-a54a-36ea231048ae;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:12:39 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 10.778 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=70c74d5d-7224-4218-a076-f7c7b3dda756;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:12:40 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 5.056 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b0b880ad-6daa-417f-9ff8-aeea255b4012;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:12:41 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 6.852 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=eaf9ceb2-b535-4956-a872-6c43531abe94;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:01 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 28.836 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=2717edeb-5953-4bc0-8fdd-816ac08e6229;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:01 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 8.103 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=c03a2768-112b-4610-919a-aaa3de746510;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:02 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 6.384 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e91e1242-fbcf-499d-aea5-43424f97b181;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:03 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 21.918 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=f3a003df-021f-412e-9ed5-659ba51159c5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 7.913 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=20ee7438-0295-44fa-b6fe-3247e2406b1c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 19.667 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=731d74a2-ce60-492f-afcf-da448f7da09a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Sat May 10 2025 11:13:05 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 6.191 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=49204cd5-eed0-490c-bf94-72df6bc9273b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 11:19:12 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"id": 13,
+		"name": "rohan",
+		"email": "rohan1@gmail.com",
+		"password": "$2b$10$q1Oeg/emKIjuL7oXYnLm0ez1BIs2R42TdnJCM4Ln3mNMwaTL.jxCu",
+		"phone": 9859611855,
+		"createdAt": "2025-05-09T16:28:08.000Z",
+		"updatedAt": "2025-05-09T16:28:08.000Z"
+	},
+	"error": null
+}
+Response: 200 25.171 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=9723da60-375b-4b10-bec2-2b63e0d4c33f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 12:10:38 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Something went wrong.",
+	"data": null,
+	"error": "getDynamicContent is not defined"
+}
+Response: 500 21.647 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=35535557-b83b-440e-9542-95537c1a99d6;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 12:11:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Something went wrong.",
+	"data": null,
+	"error": "constants is not defined"
+}
+Response: 500 11.824 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=a5f1c39f-6105-4246-9245-0065d0719563;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 12:16:02 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 32.524 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=a73d86b6-2ffa-42c5-93cc-b88b2b808b1d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 12:19:10 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 32.050 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=eda497ed-92d5-44ae-b98f-f67f822161d6;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Sat May 10 2025 12:20:02 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 29.200 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=872ce92f-b8c4-45ab-b864-9d184a896960;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=57] at Sat May 10 2025 12:21:11 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com",
+	"type": "EMAIL"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 53.958 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8982bce3-97e3-4aa1-9924-0d5ac8df2bd4;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=42] at Sat May 10 2025 12:26:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 102.731 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b2b0d9ad-39b1-4f0e-8d90-377217975e98;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Sat May 10 2025 15:08:20 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4Njk5MDAsImV4cCI6MTc0NzEyOTEwMH0.Hm_kyiAaId3BBN_wLFBa3uePyDDY-cmo0NY9cZDev7Q",
+	"error": null
+}
+Response: 200 296.841 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=20f2e828-d8e1-43fd-9f54-9c4330e401d3;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 15:08:37 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY",
+	"error": null
+}
+Response: 200 205.990 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e0cfde3c-3217-4f68-b2a4-c14939475fdd;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:09:22 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": null,
+	"error": null
+}
+Response: 200 1.474 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=04877239-64fb-40c5-b04c-f79682b07351;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:16:04 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 3.029 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=40048de2-b82c-4c95-ac1b-ac0d8c8f1c84;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:16:47 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 3.141 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=c395381d-6c36-4249-bfc8-9a93dd45466e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:16:49 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 1.411 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=72818f5d-20cf-4615-a8f8-2721fe564fa2;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:17:28 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success No Detail",
+	"data": null,
+	"error": null
+}
+Response: 200 1.920 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=4d7b334c-4fc2-4fa2-8088-3a59a47ee47c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0] at Sat May 10 2025 15:19:09 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success No Detail",
+	"data": null,
+	"error": null
+}
+Response: 200 2.262 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg2OTkxNywiZXhwIjoxNzQ3MTI5MTE3fQ.F4DHKxXLYI5R1u9uw6EgonucNbXgCmshETrua2NQUkY;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=69b2ddf3-ba4a-48d9-b622-546d4cc6e47e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:22:41 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 5.377 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=758f5da9-15f3-4f24-9dd6-4daec56cd925;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 15:22:54 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg3MDc3NCwiZXhwIjoxNzQ3MTI5OTc0fQ.B7WVH7vjDiVMW2w55hH1mtEkyOa1hYbUEk9OPfw5FoI",
+	"error": null
+}
+Response: 200 118.645 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZWwxQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0Njg3MDc3NCwiZXhwIjoxNzQ3MTI5OTc0fQ.B7WVH7vjDiVMW2w55hH1mtEkyOa1hYbUEk9OPfw5FoI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=32165ac2-41f1-4125-a6ba-08440e0f8f7f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:23:09 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 1.455 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=51586bb0-97ce-4b11-a84c-84bf1f190f78;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Sat May 10 2025 15:23:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8",
+	"error": null
+}
+Response: 200 196.769 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=d0b37c2a-c2c0-4420-9bac-e731896e69ea;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:23:46 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 2.841 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=3587027e-a47b-413a-9653-8dd493466aa2;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:24:05 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": null,
+	"error": null
+}
+Response: 200 4.147 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b81e9a0b-5eaa-44d3-900a-e575099a79a1;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:24:21 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "myk1@gmail.com",
+	"error": null
+}
+Response: 200 4.207 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=a8d125f3-3ec6-4b43-a7ae-7edbe70753ce;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:24:27 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": null,
+	"error": null
+}
+Response: 200 4.889 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b54e8cac-3283-4d85-891e-d2d034b24383;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:24:36 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "Admin",
+	"error": null
+}
+Response: 200 4.369 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b0b2c65e-315a-4d79-8ea5-dba7d13837db;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:24:59 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 6.611 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=c7beeec7-e045-45de-8f13-1521b3c3fd47;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:25:15 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 4.735 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=f30d5bf3-3fb6-48ec-aece-1bbc10f11b36;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:25:16 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 3.348 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=3f55ae96-5c19-4b0e-9f07-ad423fe2608b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 15:25:37 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "myk1@gmail.com",
+	"error": null
+}
+Response: 200 4.073 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQWRtaW4iLCJpYXQiOjE3NDY4NzA4MTMsImV4cCI6MTc0NzEzMDAxM30.YJKlJMVDCT7tJ6INMmHPZpx6EnnJ3j1njVJAKIbKaV8;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=7421ad68-6f78-4bdd-af3a-45e233a18381;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:28:11 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "myk1@gmail.com",
+	"error": null
+}
+Response: 200 22.382 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=6ba41942-4a45-4b67-9046-4570c9a3bc14;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:30:15 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI",
+	"error": null
+}
+Response: 200 305.167 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=3d4d23ec-9c35-4fbe-9801-f950d7826c1c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:30:46 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 6.995 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=be1c3309-feed-4ae0-b3e0-d97dd6feda5c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:30:56 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 6.171 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=66f5140f-a6c3-42bd-8e5b-4e98625ac3f5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:31:14 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid token",
+	"data": null,
+	"error": null
+}
+Response: 200 4.282 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=213b63c9-f0f1-482d-a438-1584f99c10d8;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:32:14 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"id": 14,
+		"email": "jeel1@gmail.com",
+		"role_name": "Client",
+		"iat": 1746882015,
+		"exp": 1747141215
+	},
+	"error": null
+}
+Response: 200 6.947 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=04f7e25f-08e3-40ec-a7ec-d19b4293287e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:34:56 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 7.142 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=85520bcf-ea22-4660-bee0-f9c331f29953;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:38:54 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 5.979 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=ad911c06-ad40-4c96-9bce-d788959cf2ef;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:39:13 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 6.454 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e697d75c-a2c5-4650-8046-ddd58b95233b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:40:03 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 7.432 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=fbef8693-06b5-45db-bef0-124204a18025;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:40:56 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "User not found",
+	"data": null,
+	"error": {
+		"id": 14,
+		"name": "jeel",
+		"email": "jeel1@gmail.com",
+		"password": "$2b$10$DIDkYjaaW6bKbVB2QBW2bePWgRU13mf4Zhvr79bWsgKKDejKuJs8y",
+		"phone": 9756312457,
+		"createdAt": "2025-05-10T05:05:49.000Z",
+		"updatedAt": "2025-05-10T05:05:49.000Z"
+	}
+}
+Response: 422 33.659 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8145a63e-ac69-42f5-9570-f476fa814617;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:41:32 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response: 500 6.084 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=f02e5fbe-dc68-49ec-9768-cd8b7e43f623;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=0;tokenpayload=[object Object]] at Sat May 10 2025 18:41:50 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "User not found",
+	"data": null,
+	"error": {
+		"id": 14,
+		"name": "jeel",
+		"email": "jeel1@gmail.com",
+		"password": "$2b$10$DIDkYjaaW6bKbVB2QBW2bePWgRU13mf4Zhvr79bWsgKKDejKuJs8y",
+		"phone": 9756312457,
+		"createdAt": "2025-05-10T05:05:49.000Z",
+		"updatedAt": "2025-05-10T05:05:49.000Z"
+	}
+}
+Response: 422 36.535 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=619e2172-cc33-44ef-8b8a-9e34fe8477ab;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=66;tokenpayload=[object Object]] at Sat May 10 2025 18:50:16 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"oldPassword": "jeel123456",
+	"newPassword": "jeel123"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Password changed successfully!",
+	"data": null,
+	"error": null
+}
+Response: 200 2034.669 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=72bd510a-49c3-4a80-ad2e-5479bd784d0b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:50:26 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 404,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": null
+}
+Response: 404 148.121 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=4c257e41-d0e4-42a8-b1e2-3ece913f620d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=62] at Sat May 10 2025 18:50:32 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgzMjMyLCJleHAiOjE3NDcxNDI0MzJ9.AVkwgJffnx3z-M_kC7p-zpO5ZYDfurBFuxqWqBIHtDg",
+	"error": null
+}
+Response: 200 140.534 ms 
+
+Request: POST /api/v1/common/auth/reset-password headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=ce25d5a3-1c9a-42f6-ba12-151cae00e5dc;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:51:57 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Password reset successfully!",
+	"data": null,
+	"error": null
+}
+Response: 200 7.459 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8d0baa4c-cd93-4790-b889-9f74835acfc8;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=62] at Sat May 10 2025 18:52:02 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgzMzIyLCJleHAiOjE3NDcxNDI1MjJ9.1UCTuVw_ghgo_OVYAG82oT-ar94t1rzv1wBXL1H6jws",
+	"error": null
+}
+Response: 200 184.102 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=f3d57c94-ce81-4597-891e-0d6a92dd4b0a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:52:20 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 404,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": null
+}
+Response: 404 171.367 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=67eea968-cde6-4f65-bafc-011fa4e0d009;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=62] at Sat May 10 2025 18:52:25 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgzMzQ1LCJleHAiOjE3NDcxNDI1NDV9.tJuj5GGGezo1SaQ4uRbiShcDLbXKjWNby9M-AZ84G7c",
+	"error": null
+}
+Response: 200 186.196 ms 
+
+Request: POST /api/v1/common/auth/reset-password headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8a8df94e-0230-4c5a-8449-37800e8b0d91;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:53:46 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Password reset successfully!",
+	"data": null,
+	"error": null
+}
+Response: 200 5.555 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=6f4c9bcb-cb89-42ac-bd87-b4dcba277099;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=66;tokenpayload=[object Object]] at Sat May 10 2025 18:53:54 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"oldPassword": "jeel123456",
+	"newPassword": "jeel123"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Password does not match with old one",
+	"data": null,
+	"error": null
+}
+Response: 422 185.839 ms 
+
+Request: POST /api/v1/common/auth/change-password headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgyMDE1LCJleHAiOjE3NDcxNDEyMTV9.5GVYRrrpNi8ppOj8nE0uejABSU2uQecVOhDlsjr8ulI;content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8a4b749a-ae55-4db3-ab6a-cc21f3a97542;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=66;tokenpayload=[object Object]] at Sat May 10 2025 18:54:06 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"oldPassword": "jeel123",
+	"newPassword": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Password changed successfully!",
+	"data": null,
+	"error": null
+}
+Response: 200 322.924 ms 
+
+Request: POST /api/v1/common/auth/reset-password headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e7e22f64-3f00-46a4-bd33-4aaa8534d4c4;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:54:20 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Password reset successfully!",
+	"data": null,
+	"error": null
+}
+Response: 200 4.592 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e2fab4b6-d422-4639-8927-bb93419239db;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=62] at Sat May 10 2025 18:54:23 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123"
+}
+Response Body:
+{
+	"status": 404,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": null
+}
+Response: 404 186.097 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8366ec1e-f6a5-4c26-8807-503067fd783c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Sat May 10 2025 18:54:30 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ2ODgzNDcwLCJleHAiOjE3NDcxNDI2NzB9.4yZC2z9XrCGfDRETlS4lubC52_zdw09Z-UlvDbqgD-E",
+	"error": null
+}
+Response: 200 168.936 ms 

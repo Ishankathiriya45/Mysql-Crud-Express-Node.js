@@ -1,0 +1,83 @@
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=edffa56d-3470-4c93-a927-497be8f83bd7;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=67] at Thu May 29 2025 16:55:23 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com",
+	"password": "rohan123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid login attempt",
+	"data": null,
+	"error": null
+}
+Response: 422 703.528 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=00d14ab3-aeac-45f0-9983-7a99dff8852a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Thu May 29 2025 16:55:30 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImVtYWlsIjoibXlrMUBnbWFpbC5jb20iLCJyb2xlX25hbWUiOiJBZG1pbiIsImlhdCI6MTc0ODUxNzkzMCwiZXhwIjoxNzQ4Nzc3MTMwfQ.i-_1bR6Fp92EDau2nD_txagQLmDgZX_1hAWbvS9KrxA",
+	"error": null
+}
+Response: 200 243.020 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=867765d8-0877-4c60-9d85-6ee3a2132c8a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=67] at Thu May 29 2025 16:55:52 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com",
+	"password": "rohan123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImVtYWlsIjoicm9oYW4xQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0ODUxNzk1MiwiZXhwIjoxNzQ4Nzc3MTUyfQ.PDyKGACJp9pd8dC16VVTLEsZbEMmx7KviWERAFQcJBs",
+	"error": null
+}
+Response: 200 232.431 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=52a6ebf3-b8bd-4f0b-80ac-caf488e7b551;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Thu May 29 2025 16:57:06 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 27.876 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=2f2eb301-3322-42ac-beeb-ddccc8685e22;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Thu May 29 2025 17:05:38 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 60.574 ms 

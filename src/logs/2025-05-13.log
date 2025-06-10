@@ -1,0 +1,791 @@
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=57e81f85-da6c-43f8-9edc-9413dcdeaccc;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:13:54 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ3MTI5NDM0LCJleHAiOjE3NDczODg2MzR9.AOhwjJ-wbCi4plR--D1-eBlxNygaNdujm1LT3VTm_0c",
+	"error": null
+}
+Response: 200 273.697 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8537a6ad-e3bc-4482-8790-be298aeec05c;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:14:37 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"id": 14,
+		"name": "jeel",
+		"email": "jeel1@gmail.com",
+		"password": "$2b$10$Cu1AL8jQZ0nawSzl9waNpOIUAoglkxviXB7EYcHQ8Ya50qhqB1D8G",
+		"phone": 9756312457,
+		"createdAt": "2025-05-10T05:05:49.000Z",
+		"updatedAt": "2025-05-10T13:24:06.000Z",
+		"UserRole": {
+			"id": 14,
+			"roleId": 2,
+			"userId": 14,
+			"createdAt": "2025-05-10T05:05:49.000Z",
+			"updatedAt": "2025-05-10T05:05:49.000Z",
+			"Role": {
+				"id": 2,
+				"name": "Client",
+				"slug": "client",
+				"created_at": "2025-05-09T16:26:14.000Z",
+				"updated_at": "2025-05-09T16:26:14.000Z",
+				"deleted_at": null
+			}
+		}
+	},
+	"error": null
+}
+Response: 200 133.823 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=4caeaa86-b8fb-472a-b809-0a5ddfc9359d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:15:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"id": 14,
+		"name": "jeel",
+		"email": "jeel1@gmail.com",
+		"password": "$2b$10$Cu1AL8jQZ0nawSzl9waNpOIUAoglkxviXB7EYcHQ8Ya50qhqB1D8G",
+		"phone": 9756312457,
+		"createdAt": "2025-05-10T05:05:49.000Z",
+		"updatedAt": "2025-05-10T13:24:06.000Z",
+		"UserRole": {
+			"id": 14,
+			"roleId": 2,
+			"userId": 14,
+			"createdAt": "2025-05-10T05:05:49.000Z",
+			"updatedAt": "2025-05-10T05:05:49.000Z",
+			"Role": {
+				"id": 2,
+				"name": "Client",
+				"slug": "client",
+				"created_at": "2025-05-09T16:26:14.000Z",
+				"updated_at": "2025-05-09T16:26:14.000Z",
+				"deleted_at": null
+			}
+		}
+	},
+	"error": null
+}
+Response: 200 123.352 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=a8716280-707d-4a9e-a9d4-ebc620f5c85e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:17:38 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid login attempt",
+	"data": null,
+	"error": null
+}
+Response: 422 109.834 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=7156ed64-d8d3-4c9a-baf6-01047ae6e0f3;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Tue May 13 2025 15:17:59 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImVtYWlsIjoibXlrMUBnbWFpbC5jb20iLCJyb2xlX25hbWUiOiJBZG1pbiIsImlhdCI6MTc0NzEyOTY3OSwiZXhwIjoxNzQ3Mzg4ODc5fQ.34_KqfBGUO3cDiLaDmjheqjG3L9y58ghfImOeIhcAng",
+	"error": null
+}
+Response: 200 189.175 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=0d3eb042-7675-4dbb-8a85-3d10b72d5fb7;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:18:05 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid login attempt",
+	"data": null,
+	"error": null
+}
+Response: 422 184.881 ms 
+
+Request: POST /api/v1/admin/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=0e15804b-4da4-454f-a68f-8107d698cb47;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Tue May 13 2025 15:18:12 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImVtYWlsIjoibXlrMUBnbWFpbC5jb20iLCJyb2xlX25hbWUiOiJBZG1pbiIsImlhdCI6MTc0NzEyOTY5MiwiZXhwIjoxNzQ3Mzg4ODkyfQ.p1Eu_mEs1Sy6eCmY1QKXVV-FcC42xSbaNZjnDqhYwe4",
+	"error": null
+}
+Response: 200 190.235 ms 
+
+Request: POST /api/v1/client/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=33ac4941-d654-483d-b71f-5914346975a9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:21:58 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response: 404 3.701 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=7d1f1470-74d7-4010-b7c8-d9ec10496c35;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:22:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "\"name\" is required"
+}
+Response: 422 6.165 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=d31360ec-fd9f-4691-b866-3525e14f5987;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:22:35 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "\"name\" is required"
+}
+Response: 422 2.172 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=776593e6-4ac6-4aa6-b441-65fee353e7d5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:22:54 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "BcryptUtil is not defined"
+}
+Response: 500 10.323 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8ab91304-073f-48ef-9e06-4943e2becd9d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=65] at Tue May 13 2025 15:23:48 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "jeel1@gmail.com",
+	"password": "jeel123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImVtYWlsIjoiamVlbDFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiQ2xpZW50IiwiaWF0IjoxNzQ3MTMwMDI4LCJleHAiOjE3NDczODkyMjh9.Ze3jAsRbDJyWOqaZ6pPU5P3ybY25Vr17ZRJvNafnBbs",
+	"error": null
+}
+Response: 200 94.553 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=31969f71-27d5-4dba-914d-03fc7675bcd5;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=63] at Tue May 13 2025 15:24:05 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "myk1@gmail.com",
+	"password": "myk123456"
+}
+Response Body:
+{
+	"status": 422,
+	"responseCode": 0,
+	"success": false,
+	"message": "Invalid login attempt",
+	"data": null,
+	"error": null
+}
+Response: 422 216.891 ms 
+
+Request: POST /api/v1/client/auth/login headers[content-type=application/json;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=6fcaff06-d623-4819-b676-874115ec900f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=67] at Tue May 13 2025 15:24:18 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"email": "rohan1@gmail.com",
+	"password": "rohan123456"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImVtYWlsIjoicm9oYW4xQGdtYWlsLmNvbSIsInJvbGVfbmFtZSI6IkNsaWVudCIsImlhdCI6MTc0NzEzMDA1OCwiZXhwIjoxNzQ3Mzg5MjU4fQ.0i94XiQLX1E0dcpEhPHbPQLmAAiBsd8rwqRA0eFGIqQ",
+	"error": null
+}
+Response: 200 198.939 ms 
+
+Request: GET /api/v1/admin/product/list headers[user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=18fd12ec-f7a6-4c5a-9441-e8406d7efe21;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive] at Tue May 13 2025 16:17:25 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"totalItems": 9,
+		"totalPages": 1,
+		"page": 1,
+		"hasPrevious": false,
+		"hasNext": false,
+		"previous": null,
+		"next": null,
+		"row": [
+			{
+				"id": 1,
+				"name": "MYK 305 GREY Tile",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 12,
+				"price": 21600,
+				"weight": "20kg",
+				"productImg": "1746170481283-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:21:21.000Z",
+				"updatedAt": "2025-05-02T07:27:20.000Z"
+			},
+			{
+				"id": 2,
+				"name": "LATICRETE Myk Sp-100",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 18,
+				"price": 2950,
+				"weight": "14kg",
+				"productImg": "1746171050605-abs.jpg",
+				"status": true,
+				"createdAt": "2025-05-02T07:30:52.000Z",
+				"updatedAt": "2025-05-02T07:30:52.000Z"
+			},
+			{
+				"id": 8,
+				"name": "LATICRETE 346",
+				"brand": "myk laticrete",
+				"category": 1,
+				"stock": 38,
+				"price": 2850,
+
+...
+Response: 200 76.178 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=7f33eea5-0f32-4c64-a71a-c609c7bd4fc1;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------782417852233920332973158;content-length=88521] at Tue May 13 2025 16:55:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "Cannot destructure property 'productImg' of 'req.file' as it is undefined."
+}
+Response: 500 489.448 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8bcc8e04-6785-4eeb-827d-261ab8d61db4;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------739374779910485873811489;content-length=88521] at Tue May 13 2025 16:57:03 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "File upload failed: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined"
+}
+Response: 500 75.646 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=218e1529-6fc2-4b43-bd07-2028b0f92b19;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------054320589361017763363844;content-length=88521] at Tue May 13 2025 16:57:36 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 23,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747135655968.jpg",
+		"updatedAt": "2025-05-13T11:27:35.971Z",
+		"createdAt": "2025-05-13T11:27:35.971Z"
+	},
+	"error": null
+}
+Response: 200 49.559 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=73a0d61a-76a3-4e8b-85c2-b6c3da10a080;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------719551937479708247000513;content-length=88521] at Tue May 13 2025 16:58:25 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 24,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747135705256.jpg",
+		"updatedAt": "2025-05-13T11:28:25.263Z",
+		"createdAt": "2025-05-13T11:28:25.263Z"
+	},
+	"error": null
+}
+Response: 200 137.244 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=0963b77e-998d-4f01-8354-df84d4572639;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------971516243496428176852353;content-length=88521] at Tue May 13 2025 17:00:11 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 500,
+	"responseCode": 0,
+	"success": false,
+	"message": "Failed",
+	"data": null,
+	"error": "File upload failed: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined"
+}
+Response: 500 16.343 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=b7cc8b3c-d62b-43ef-b026-85497417385d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------451265976876476053173163;content-length=88521] at Tue May 13 2025 17:07:27 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 25,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136247900.jpg",
+		"updatedAt": "2025-05-13T11:37:27.905Z",
+		"createdAt": "2025-05-13T11:37:27.905Z"
+	},
+	"error": null
+}
+Response: 200 40.100 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=8eb04b73-076b-4290-a922-084f2211781b;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------355784765178605838523673;content-length=88521] at Tue May 13 2025 17:09:00 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 26,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136340762.jpg",
+		"updatedAt": "2025-05-13T11:39:00.774Z",
+		"createdAt": "2025-05-13T11:39:00.774Z"
+	},
+	"error": null
+}
+Response: 200 83.500 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=2a477e1c-cc4f-4e3e-afd4-5e2ca880f2e6;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------909818600946821998588031;content-length=88521] at Tue May 13 2025 17:10:49 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 27,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136449408.jpg",
+		"updatedAt": "2025-05-13T11:40:49.451Z",
+		"createdAt": "2025-05-13T11:40:49.451Z"
+	},
+	"error": null
+}
+Response: 200 77.174 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=e3965254-f5e4-4518-9527-25dac91d17c9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------936664852817483200149322;content-length=88521] at Tue May 13 2025 17:12:24 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 28,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136544509.jpg",
+		"updatedAt": "2025-05-13T11:42:24.528Z",
+		"createdAt": "2025-05-13T11:42:24.528Z"
+	},
+	"error": null
+}
+Response: 200 54.748 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=029eeb23-1d83-449e-8bd0-1b7840b2ad5d;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------078211979273338700274441;content-length=88521] at Tue May 13 2025 17:14:57 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 29,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136697765.jpg",
+		"updatedAt": "2025-05-13T11:44:57.771Z",
+		"createdAt": "2025-05-13T11:44:57.771Z"
+	},
+	"error": null
+}
+Response: 200 46.332 ms 
+
+Request: GET /favicon.ico headers[host=192.168.1.157:4031;connection=keep-alive;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0;accept=image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8;referer=http://192.168.1.157:4031/public/upload/product/1747136697765.jpg;accept-encoding=gzip, deflate;accept-language=en-US,en;q=0.9,en-IN;q=0.8] at Tue May 13 2025 17:15:13 GMT+0530, IP: ::ffff:192.168.1.157, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0
+Response: 404 2.110 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=81b4f6bf-5b92-4fef-aa7d-26fba990e641;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------556284724490870534408552;content-length=88521] at Tue May 13 2025 17:16:13 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 30,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747136773727.jpg",
+		"updatedAt": "2025-05-13T11:46:13.736Z",
+		"createdAt": "2025-05-13T11:46:13.736Z"
+	},
+	"error": null
+}
+Response: 200 54.695 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=32ac6990-f408-4eca-b320-a902a0f25b91;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------561921082715114737513856;content-length=88521] at Tue May 13 2025 17:17:22 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 31,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "http://192.168.1.157:4031/public/upload/product/1747136841962.jpg",
+		"updatedAt": "2025-05-13T11:47:21.973Z",
+		"createdAt": "2025-05-13T11:47:21.973Z"
+	},
+	"error": null
+}
+Response: 200 79.753 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=4991fcb6-f971-4bdd-91c3-f8623677ee6f;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------067049252254411099327694;content-length=88521] at Tue May 13 2025 17:19:19 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 32,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "http://192.168.1.157:4031/public/upload/product/1747136959410.jpg",
+		"updatedAt": "2025-05-13T11:49:19.421Z",
+		"createdAt": "2025-05-13T11:49:19.421Z"
+	},
+	"error": null
+}
+Response: 200 83.411 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=acda74c3-182c-48fd-9677-ed1cf86890ae;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------474205900639837409570007;content-length=88521] at Tue May 13 2025 18:25:48 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 33,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": null,
+		"updatedAt": "2025-05-13T12:55:48.897Z",
+		"createdAt": "2025-05-13T12:55:48.897Z"
+	},
+	"error": null
+}
+Response: 200 53.537 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=1174738c-8682-460f-8136-533f05b3dfca;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------648642612149452870285605;content-length=88521] at Tue May 13 2025 18:26:51 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 34,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": null,
+		"updatedAt": "2025-05-13T12:56:51.333Z",
+		"createdAt": "2025-05-13T12:56:51.333Z"
+	},
+	"error": null
+}
+Response: 200 65.619 ms 
+
+Request: POST /api/v1/admin/product/create/1 headers[authorization=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15azFAZ21haWwuY29tIiwicm9sZV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE3NDY0NDkzMTQsImV4cCI6MTc0NjcwODUxNH0._BlJH9lFklNuXFqmqKZowAhQoSb6Ctsqcd4cCNzoSGA;user-agent=PostmanRuntime/7.43.4;accept=*/*;cache-control=no-cache;postman-token=81e0c061-8902-49b0-8502-2dfcade33b5e;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-type=multipart/form-data; boundary=--------------------------496086828351445127649870;content-length=88521] at Tue May 13 2025 18:28:09 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.43.4
+Request Body:
+{
+	"name": "LATICRETE 485",
+	"price": "6720",
+	"stock": "31",
+	"weight": "9kg"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "Success",
+	"data": {
+		"brand": "myk laticrete",
+		"status": true,
+		"id": 35,
+		"name": "LATICRETE 485",
+		"category": "1",
+		"stock": "31",
+		"price": "6720",
+		"weight": "9kg",
+		"productImg": "1747141089133-abs.jpg",
+		"updatedAt": "2025-05-13T12:58:09.248Z",
+		"createdAt": "2025-05-13T12:58:09.248Z"
+	},
+	"error": null
+}
+Response: 200 161.804 ms 
