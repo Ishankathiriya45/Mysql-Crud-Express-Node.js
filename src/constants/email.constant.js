@@ -1,6 +1,7 @@
 module.exports = {
   "forgot-password-subject":
     "Password Reset Request – Verify with Your OTP Code",
+
   "forgot-password-body": `
     Hello [USER_NAME],
 
@@ -20,6 +21,7 @@ module.exports = {
     [USER_NAME]`,
 
   "email-verification-subject": "MatchPoint Email Confirmation",
+
   "email-verification-body": `
     Hi!
 
@@ -36,6 +38,7 @@ module.exports = {
     You are receiving this email because you registered with MatchPoint Tennis App.`,
 
   "email-updated-subject": "Email Updated – Verify Your Email with This Code",
+  
   "email-updated-body": `
     Hello [USER_NAME],
 

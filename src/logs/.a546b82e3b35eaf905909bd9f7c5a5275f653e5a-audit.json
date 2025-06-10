@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Node_Js\\project_03_ecommerce\\src\\logs\\.a546b82e3b35eaf905909bd9f7c5a5275f653e5a-audit.json",
+    "files": [
+        {
+            "date": 1749540207629,
+            "name": "E:\\Node_Js\\project_03_ecommerce\\src\\logs\\combined-2025-06-10.log",
+            "hash": "8f607d72d326e7becddae28c1ae6c5de84dcbaa2208bc20a7b0fb8fe45484e3d"
+        }
+    ],
+    "hashType": "sha256"
+}

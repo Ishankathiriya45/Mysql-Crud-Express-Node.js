@@ -1,0 +1,160 @@
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=50298318-1f86-4874-9d9c-beffbc02aa22;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 10:33:30 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 72.308 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=58a4b638-053f-45cf-a2c1-1d42eaf6705a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 11:53:20 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 34.924 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=c0d31fae-57a3-45bb-b186-693faf5f44d3;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 11:55:35 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 26.233 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=24b493b7-67a2-4250-b0e9-cbce2925acd7;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 11:59:22 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 74.700 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=bb7f6315-f9bc-4c60-9097-0e6c73a5c758;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:01:38 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 24.217 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=3d78be08-7acf-4254-acbd-011a9eb2bfe2;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:02:55 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 24.714 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=86e35951-b727-4dc0-ba48-1018b04d4503;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:08:36 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 24.822 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=592560b4-1d66-4055-b1b3-915fe5f3050a;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:09:18 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 27.670 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=c5ff3abd-eda6-41d4-ad13-7e445e3a0795;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:09:58 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 26.591 ms 
+
+Request: POST /api/v1/common/auth/sendOtp headers[content-type=application/json;user-agent=PostmanRuntime/7.44.0;accept=*/*;cache-control=no-cache;postman-token=69d3d875-a988-4440-9ead-596c3ca709e9;host=localhost:4031;accept-encoding=gzip, deflate, br;connection=keep-alive;content-length=36] at Tue Jun 10 2025 12:10:08 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.44.0
+Request Body:
+{
+	"email": "rohan1@gmail.com"
+}
+Response Body:
+{
+	"status": 200,
+	"responseCode": 1,
+	"success": true,
+	"message": "We have send a verification code to your email address.",
+	"data": null,
+	"error": null
+}
+Response: 200 20.206 ms 

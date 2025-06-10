@@ -45,7 +45,7 @@ const dbConfig = {
 //     url: process.env[`URL_${envMode}`],
 // }
 
-// global.config = config;
-// module.exports = config;
+global.config = dbConfig;
+module.exports = dbConfig;
 
 module.exports = dbConfig;

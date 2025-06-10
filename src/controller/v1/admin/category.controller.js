@@ -27,16 +27,16 @@ class CategoryController {
 
     async getProduct(req) {
         try {
-            const { search, page, limit, paginate = true } = req.query;
+            const { search, currentPage, pageSize, paginate = true } = req.query;
 
             let options = {
                 include: [{ model: Product }]
             };
 
             if (paginate) {
-                options.page = page;
-                options.limit = limit;
-                options.paginate = paginate;
+                options.currentPage = currentPage;
+                options.pageSize = pageSize;
+                options.is_paginate = paginate;
             }
 
             if (!isEmpty(search)) {

@@ -1,0 +1,3 @@
+{"level":"info","message":{"duration":"31ms","method":"POST","requestBody":{"email":"rohan1@gmail.com"},"responseBody":{},"statusCode":200,"url":"/api/v1/common/auth/sendOtp"}}
+{"level":"info","message":{"duration":"20ms","method":"GET","responseBody":"{\"status\":500,\"responseCode\":0,\"success\":false,\"message\":\"Something went wrong\",\"data\":null,\"error\":\"fetchRecord is not a function\"}","statusCode":500,"url":"/api/v1/admin/category/list"}}
+{"level":"info","message":{"duration":"36ms","method":"GET","responseBody":{},"statusCode":200,"url":"/api/v1/admin/category/list"}}

@@ -1,0 +1,495 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Ecommerce",
+        "description": "Ecommerce Api documentation",
+        "version": "3.1.0"
+    },
+    "host": "192.168.1.137:4031",
+    "basePath": "/",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "requestTokenAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "requesttoken",
+            "description": "Enter valid request token."
+        },
+        "bearerTokenAuth": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "Enter valid authorization token. Like: Bearer Token"
+        },
+        "deviceName": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "devicename",
+            "description": "Enter valid authorization token. Like: Bearer Token"
+        }
+    },
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/v1/admin/product/create/{categoryId}": {
+            "post": {
+                "tags": [
+                    "Admin | Product"
+                ],
+                "summary": "Add product details",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "categoryId",
+                        "in": "params",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "brand",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "stock",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "price",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "weight",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "productImg",
+                        "in": "formData",
+                        "type": "file",
+                        "description": "Product image file"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/admin/product/list": {
+            "get": {
+                "tags": [
+                    "Admin | Product"
+                ],
+                "summary": "Get product details",
+                "description": "",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/admin/product/update/{productId}": {
+            "put": {
+                "tags": [
+                    "Admin | Product"
+                ],
+                "summary": "Update product details",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "brand",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "stock",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "price",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "weight",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "productImg",
+                        "in": "formData",
+                        "type": "file",
+                        "description": "Product image file"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/admin/product/delete/{productId}": {
+            "delete": {
+                "tags": [
+                    "Admin | Product"
+                ],
+                "summary": "Delete product",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "type": "string",
+                        "description": "Enter product id",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/admin/category/create": {
+            "post": {
+                "tags": [
+                    "Admin | Category"
+                ],
+                "summary": "Add category",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "example": "name"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/admin/category/list": {
+            "get": {
+                "tags": [
+                    "Admin | Category"
+                ],
+                "summary": "Get category",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "currentPage",
+                        "in": "query",
+                        "type": "string",
+                        "description": "Enter current page no"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "type": "string",
+                        "description": "Enter page size"
+                    },
+                    {
+                        "name": "isPaginate",
+                        "in": "query",
+                        "type": "boolean",
+                        "description": "Define true or false for retrieve list with pagination or without pagination"
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/client/auth/create": {
+            "post": {
+                "tags": [
+                    "Client | Auth"
+                ],
+                "summary": "Register User",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "example": "name"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "example": "email"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "example": "password"
+                                },
+                                "phone": {
+                                    "type": "string",
+                                    "example": "phone"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/client/auth/login": {
+            "post": {
+                "tags": [
+                    "Client | Auth"
+                ],
+                "summary": "Login user",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string",
+                                    "example": "email"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "example": "password"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/auth/sendOtp": {
+            "post": {
+                "tags": [
+                    "Common | Auth"
+                ],
+                "summary": "Send otp",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string",
+                                    "example": "email"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "example": "Email || Password"
+                                },
+                                "isMailUpdate": {
+                                    "type": "string",
+                                    "example": "true || false"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/auth/reset-password": {
+            "post": {
+                "tags": [
+                    "Common | Auth"
+                ],
+                "summary": "Reset password",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string",
+                                    "example": "email"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "example": "password"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        },
+        "/v1/auth/change-password": {
+            "post": {
+                "tags": [
+                    "Common | Auth"
+                ],
+                "summary": "Change password",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "oldPassword": {
+                                    "type": "string",
+                                    "example": "old-password"
+                                },
+                                "newPassword": {
+                                    "type": "string",
+                                    "example": "new-password"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                },
+                "security": [
+                    {
+                        "requestTokenAuth": [],
+                        "bearerTokenAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "autoBody": true
+}

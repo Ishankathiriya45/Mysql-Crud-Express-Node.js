@@ -28,8 +28,8 @@ class AuthController {
             }
 
             const emailData = {
-                otp: prepareOtpRequest.otp,
-                user_name: getUser.name,
+                OTP: prepareOtpRequest.otp,
+                USER_NAME: getUser.name,
             }
 
             const subject = getDynamicContent(
@@ -41,6 +41,7 @@ class AuthController {
                 null,
                 "emailContent"
             );
+            
             const body = getDynamicContent(
                 type === "EMAIL"
                     ? isMailUpdate == true

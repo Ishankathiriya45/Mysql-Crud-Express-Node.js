@@ -1,9 +1,9 @@
-const { db:{Category} } = require("../models");
-const { fetchRecord } = require("../util/common.util");
+const { db: { Category } } = require("../models");
+const { fetchRecords } = require("../util/common.util");
 
 class CategoryRepository {
-    findAll = async (option = {}, unscoped = null) => {
-        return await fetchRecord(Category, option, option.paginate, unscoped)
+    findAll = async (option = {}, unscoped = false) => {
+        return await fetchRecords(Category, option, option?.is_paginate, unscoped)
     }
 }
 

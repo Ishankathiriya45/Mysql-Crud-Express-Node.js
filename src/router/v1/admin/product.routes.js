@@ -25,6 +25,31 @@ router.post('/create/:categoryId',
                 } else {
                     const result = await ProductCtr1.createProduct(req, res)
                     return res.status(result.status).send(result)
+                    /* 
+                        #swagger.summary = 'Add product'
+                        #swagger.tags = ['Admin | Product']
+                        #swagger.parameters = [
+                            {
+                                name:"categoryId",
+                                in: "params",
+                                type: "string"
+                            },
+                            {
+                                name: "body"
+                                in: 'body',
+                                schema: {
+                                    name: "abc",
+                                    stock: "20",
+                                    price: "12000", 
+                                    weight: "12"
+                                }
+                            }
+                        ]
+                        #swagger.security = [{
+                            "requestTokenAuth": [],
+                            "bearerTokenAuth": [],
+                        }] 
+                    */
                 }
             })
     }
@@ -34,6 +59,36 @@ router.get('/list',
     async (req, res) => {
         const result = await ProductCtr1.getProduct(req, res)
         return res.status(result.status).send(result)
+        /* 
+            #swagger.summary = 'Retrieve product list'
+            #swagger.tags = ['Admin | Product']
+            #swagger.parameters = [
+                {
+                    name: "currentPage"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "pageSize"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "isPaginate"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "search"
+                    in: 'query',
+                    type: 'string',
+                }
+            ]
+            #swagger.security = [{
+                "requestTokenAuth": [],
+                "bearerTokenAuth": [],
+            }] 
+        */
     }
 )
 
@@ -45,6 +100,41 @@ router.put('/update/:productId',
     async (req, res) => {
         const result = await ProductCtr1.editProduct(req, res)
         return res.status(result.status).send(result)
+        /* 
+            #swagger.summary = 'Update product'
+            #swagger.tags = ['Admin | Product']
+            #swagger.parameters = [
+                {
+                    name: "name"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "stock"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "price"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "weight"
+                    in: 'query',
+                    type: 'string',
+                },
+                {
+                    name: "productId"
+                    in: 'params',
+                    type: 'string',
+                }
+            ]
+            #swagger.security = [{
+                "requestTokenAuth": [],
+                "bearerTokenAuth": [],
+            }] 
+        */
     }
 )
 
@@ -52,6 +142,21 @@ router.delete('/delete/:productId',
     async (req, res) => {
         const result = await ProductCtr1.removeProduct(req, res)
         return res.status(result.status).send(result)
+        /* 
+            #swagger.summary = 'Delete product'
+            #swagger.tags = ['Admin | Product']
+            #swagger.parameters = [
+                {
+                    name: "productId"
+                    in: 'params',
+                    type: 'string',
+                }
+            ]
+            #swagger.security = [{
+                "requestTokenAuth": [],
+                "bearerTokenAuth": [],
+            }] 
+        */
     }
 )
 
